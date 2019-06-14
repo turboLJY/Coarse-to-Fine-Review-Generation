@@ -20,7 +20,7 @@ Example:
    "reviewerID": "AAXUSC3RGM4ZJ", 
    "overall": 4,
    "topic": "6 1", 
-   "topic_tok": \["6", "1"\], 
+   "topic_tok": ["6", "1"], 
    "sketchText": "if you use PRP$ NN for watching dvds , NN .||the remote is NN of JJ . is VBG a JJ on JJ button .", 
    "reviewText": "if you use your ps3 for watching dvds , divx .||the remote is kind of cluttered . is lacking a direct on off button ."}
 ```
