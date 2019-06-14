@@ -10,7 +10,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 # Preparing the dataset
 
 - Amazon Electronic
-- Yelp
+- Yelp Restaurant
 - RateBeer
 
 json file format:
