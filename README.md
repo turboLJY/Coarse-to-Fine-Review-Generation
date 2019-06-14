@@ -14,7 +14,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 - RateBeer
 
 json data file format:
-> Example:
+> Example: <br>
 {"asin": "B000M17AVO", <br>
    "reviewerID": "AAXUSC3RGM4ZJ", <br>
    "overall": 4, <br>
