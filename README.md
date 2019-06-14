@@ -14,10 +14,11 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 - RateBeer
 
 json data file format:
-> {"asin": "B000M17AVO", <br>
+> Example:
+{"asin": "B000M17AVO", <br>
    "reviewerID": "AAXUSC3RGM4ZJ", <br>
    "overall": 4, <br>
    "topic": "6 1", <br>
    "topic_tok": \["6", "1"\], <br>
-   "patternText": "if you use PRP$ NN for watching dvds , NN .||the remote is NN of JJ . is VBG a JJ on JJ button .", <br>
+   "sketchText": "if you use PRP$ NN for watching dvds , NN .||the remote is NN of JJ . is VBG a JJ on JJ button .", <br>
    "reviewText": "if you use your ps3 for watching dvds , divx .||the remote is kind of cluttered . is lacking a direct on off button ."}
