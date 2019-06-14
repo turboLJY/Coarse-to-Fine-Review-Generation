@@ -1,5 +1,5 @@
 # Coarse-to-Fine-Review-Generation
-this repository contains the source code for the ACL 2019 paper "[Generating Long and Informative Reviews with Aspect-Aware Coarse-to-Fine Decoding](https://arxiv.org/pdf/1906.05667.pdf)"
+this repository contains the source code for the ACL 2019 paper "[Generating Long and Informative Reviews with Aspect-Aware Coarse-to-Fine Decoding](https://arxiv.org/abs/1906.05667)"
 
 # Requirements:
 
@@ -36,4 +36,17 @@ Because we have the gold standard in every stage, you can train topic, sketch an
 # Testing Instruction
 
 You can test the performance in every stage. You need to be aware that 1) testing in the sketch stage will use the topic model; 2) testing in the review stage will use the topic and sketch model.
+
+# Citation
+
+If this work is useful in your research, please cite our paper.
+
+```
+@inproceedings{koncel2019text,
+  title={{G}enerating {L}ong and {I}nformative {R}eviews with {A}spect-{A}ware {C}oarse-to-{F}ine {D}ecoding},
+  author={Junyi Li, Wayne Xin Zhao, Ji-Rong Wen, and Yang Song},
+  booktitle={ACL},
+  year={2019}
+}
+```
 
