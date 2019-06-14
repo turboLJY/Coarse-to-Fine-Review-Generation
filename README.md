@@ -25,10 +25,15 @@ Example:
    "reviewText": "if you use your ps3 for watching dvds , divx .||the remote is kind of cluttered . is lacking a direct on off button ."}
 ```
 
-# How it works
+# Training Instruction
 
 ```
 sh run.sh
 ```
 
-**First**, train topic module and save the topic model; **Second**, load the saved topic model to train sketch module and save the sketch model; **Finally**, load the saved topic and sketch model to train review module and save the review model.
+Because we have the gold standard in every stage, you can train topic, sketch and review module concurrently and save the models in every stage. 
+
+# Testing Instruction
+
+You can test the performance in every stage. You need to be aware that 1) testing in the sketch stage will use the topic model; 2) testing in the review stage will use the topic and sketch model.
+
