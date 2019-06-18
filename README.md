@@ -9,9 +9,9 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 # Preparing the dataset
 
-- Amazon Electronic
-- Yelp Restaurant
-- RateBeer
+- [Amazon Electronic](http://jmcauley.ucsd.edu/data/amazon/links.html)
+- [Yelp Restaurant](https://www.yelp.com/dataset/challenge)
+- [RateBeer](http://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect)
 
 json file format:
 ```
