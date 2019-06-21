@@ -42,7 +42,7 @@ You can test the performance in every stage. You need to be aware that 1) testin
 If this work is useful in your research, please cite our paper.
 
 ```
-@inproceedings{koncel2019text,
+@inproceedings{junyi2019reviewt,
   title={{G}enerating {L}ong and {I}nformative {R}eviews with {A}spect-{A}ware {C}oarse-to-{F}ine {D}ecoding},
   author={Junyi Li, Wayne Xin Zhao, Ji-Rong Wen, and Yang Song},
   booktitle={ACL},
