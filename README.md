@@ -13,6 +13,17 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 - [Yelp Restaurant](https://www.yelp.com/dataset/challenge)
 - [RateBeer](http://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect)
 
+## topic module preprocess steps
+
+- First, we convert all review texts into lowercase, and perform tokenization using NLTK.
+- Second, we split the tokenized review texts into sentences, and run the TwitterLDA model in the review texts.
+- Finally, we get the aspect/topic sequence about a user-item review.
+
+## sketch module preprocess steps
+
+- First, we count the uni-gram, bi-gram and tri-gram. 
+- Second, we run the StanfordPostagger in the tokenized review texts.
+
 json file format:
 ```
 Example:
@@ -22,7 +33,8 @@ Example:
    "topic": "6 1", 
    "topic_tok": ["6", "1"], 
    "sketchText": "if you use PRP$ NN for watching dvds , NN .||the remote is NN of JJ . is VBG a JJ on JJ button .", 
-   "reviewText": "if you use your ps3 for watching dvds , divx .||the remote is kind of cluttered . is lacking a direct on off button ."}
+   "reviewText": "if you use your ps3 for watching dvds , divx .||the remote is kind of cluttered . is lacking a direct on off button ."
+   }
 ```
 
 # Training Instruction
