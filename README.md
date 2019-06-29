@@ -15,14 +15,35 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 ## topic module preprocess steps
 
-- First, we convert all review texts into lowercase, and perform tokenization using NLTK.
-- Second, we split the tokenized review texts into sentences, and run the TwitterLDA model in the review texts.
-- Finally, we get the aspect/topic sequence about a user-item review.
+- First, we convert all review texts into lowercase, perform tokenization using NLTK, and split the tokenized review texts into sentences
+- Second, we run the TwitterLDA model in the sentences, and tag each sentences.
+- Finally, we get the topic/aspect sequence about a user-item review, and the top 50 words in every topic/aspect.
+
+### files in topic module 
+
+- "topic.pkl": topic2idx dictionary, including <sos>, <eos>, <unk>, <pad>, and topic labels.
+- "topic_rev.pkl": idx2topic dictionary, the reverse of topic2idx
+- "user.pkl" and "item.pkl": user2idx and item2idx dictionary
 
 ## sketch module preprocess steps
 
-- First, we count the uni-gram, bi-gram and tri-gram. 
+- First, we count the uni-gram, bi-gram and tri-gram. we get the top 50 uni-gram, 200 bi-gram and 200 tri-gram.
 - Second, we run the StanfordPostagger in the tokenized review texts.
+- Finally, to get the sketch, we keep the words ranked in topic words and n-grams, and replace the rest words with their Part-of-Speech tags.
+
+## files in sketch module
+
+- "sketch.pkl": sketch2idx dictionary, including <sos>, <eos>, <pad>, topic words, n-grams, and Part-of-Speech tags.
+- "sketch_rev.pkl": idx2sketch dictionary, the reverse of sketch2idx
+   
+## review module preprocess steps
+
+- we build a dictionary in the tokenized review texts
+
+## files in review module
+
+- "review2idx.pkl": review2idx dictionary, including the words occuring no less than 5 times.
+- "idx2review.pkl": idx2review dictionary, the reverse of review2idx
 
 json file format:
 ```
