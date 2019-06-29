@@ -21,7 +21,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 ### files in topic module 
 
-- "topic.pkl": topic2idx dictionary, including <sos>, <eos>, <unk>, <pad>, and topic labels.
+- "topic.pkl": topic2idx dictionary, including \<sos\>, \<eos\>, \<unk\>, \<pad\>, and topic labels.
 - "topic_rev.pkl": idx2topic dictionary, the reverse of topic2idx
 - "user.pkl" and "item.pkl": user2idx and item2idx dictionary
 
@@ -33,7 +33,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 ## files in sketch module
 
-- "sketch.pkl": sketch2idx dictionary, including <sos>, <eos>, <pad>, topic words, n-grams, and Part-of-Speech tags.
+- "sketch.pkl": sketch2idx dictionary, including \<sos\>, \<eos\>, \<pad\>, topic words, n-grams, and Part-of-Speech tags.
 - "sketch_rev.pkl": idx2sketch dictionary, the reverse of sketch2idx
    
 ## review module preprocess steps
