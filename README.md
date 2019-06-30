@@ -17,7 +17,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 - First, we convert all review texts into lowercase, perform tokenization using NLTK, and split the tokenized review texts into sentences
 - Second, we run the TwitterLDA model in the sentences, and tag each sentences.
-- Third, we get the topic/aspect sequence about a user-item review, and the top 50 topic words in every topic/aspect.
+- Third, we get the topic/aspect sequence about a user-item review, and the top 100 topic words in every topic/aspect.
 
 Finally, we get the files
 
@@ -36,7 +36,7 @@ Finally, we get the files
 Finally, we get the files
 
 ```
-"sketch.pkl": sketch2idx dictionary, including <sos>, <eos>, <pad>, topic words, n-grams, and Part-of-Speech tags.
+"sketch.pkl": sketch2idx dictionary, including <sos>, <eos>, <pad>, top 50 topic words, n-grams, and Part-of-Speech tags.
 "sketch_rev.pkl": idx2sketch dictionary, the reverse of sketch2idx
 ```
 
@@ -48,7 +48,8 @@ Finally, we get the files
 
 ```
 "review2idx.pkl": review2idx dictionary, including the words occuring no less than 5 times.
-"idx2review.pkl": idx2review dictionary, the reverse of review2idx
+"idx2review.pkl": idx2review dictionary, the reverse of review2idx.
+"aspect_ids.pkl": topic words list, every word is replaced by its idx. the length of list is 100 * topics.
 ```
 
 The last json file format:
