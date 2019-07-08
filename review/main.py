@@ -24,8 +24,8 @@ def parse():
     parser.add_argument('-de', '--lr_decay_epoch', type=int, default=2, help='learning rate decay epoch')
     parser.add_argument('-lr', '--learning_rate', type=float, default=0.0002, help='Learning rate')
 
-    parser.add_argument('-mx', '--max_length', type=int, default=10, help='max length of sequence')
-    parser.add_argument('-mn', '--min_length', type=int, default=2, help='min length of sequence')
+    parser.add_argument('-mx', '--max_length', type=int, default=20, help='max length of sequence')
+    parser.add_argument('-mn', '--min_length', type=int, default=10, help='min length of sequence')
 
     parser.add_argument('-sd', '--save_dir', help='saved directory of model')
 
