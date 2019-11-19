@@ -15,7 +15,7 @@ this repository contains the source code for the ACL 2019 paper "[Generating Lon
 
 ## topic module preprocess steps
 
-- First, we convert all review texts into lowercase, perform tokenization using NLTK, and split the tokenized review texts into sentences
+- <font color=red>First</font>, we convert all review texts into lowercase, perform tokenization using NLTK, and split the tokenized review texts into sentences
 - Second, we run the TwitterLDA model in the sentences, and tag each sentences.
 - Third, we get the topic/aspect sequence about a user-item review, and the top 100 topic words in every topic/aspect.
 
