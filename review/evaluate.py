@@ -197,7 +197,7 @@ def decode(topic_decoder, sketch_decoder, birnn_encoder, review_decoder, topic_d
     decoded_reviews = []
 
     for ti in range(MAX_TOPIC):
-        topic_output, topic_hidden, _ = topic_decoder(topic_input, topic_hidden, encoder_out)
+        topic_output, topic_hidden, _ = topic_decoder(topic_input, topic_hidden, topic_encoder_out)
         topv, topi = topic_output.data.topk(4)
         topi = topi.squeeze(0)
         nti = topi[0][0]
@@ -207,7 +207,7 @@ def decode(topic_decoder, sketch_decoder, birnn_encoder, review_decoder, topic_d
         else:
             decoded_topics.append(vocab.idx2topic[nti])
 
-            topic = Variable(torch.LongTensor([nti]))
+            topic = Variable(torch.LongTensor([[nti]]))
             topic = topic.cuda() if USE_CUDA else topic
 
             sketch_input = Variable(torch.LongTensor([[SOS_ID]]))
